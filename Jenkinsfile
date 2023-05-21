@@ -1,5 +1,8 @@
 pipeline{
 	agent any 
+    triggers {
+    pollSCM('* * * * *')
+    }
 	stages{
 		stage('vcs'){
 			steps{
@@ -13,6 +16,12 @@ pipeline{
 			    sh 'docker image build -t sashidhar/saleor-dashboard1:Dev-21052322 .'		
 			}
 		}
+
+        stage('docker image push'){
+            steps{
+                sh 'docker image push sashidhar/saleor-dashboard1:Dev-21052322 .'
+            }
+        }
 	}
 
 }
