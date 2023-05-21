@@ -17,7 +17,7 @@ pipeline{
 			}
 		}
 
-        stage('docker image push'){
+        stage('docker image push to registry'){
             steps{
                 sh 'docker image push sashidhar/saleor-dashboard1:Dev-21052322 .'
             }
