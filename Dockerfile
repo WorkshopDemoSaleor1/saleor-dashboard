@@ -49,4 +49,5 @@ LABEL org.opencontainers.image.title="saleor/saleor-dashboard"                  
       org.opencontainers.image.revision="$COMMIT_ID"                                   \
       org.opencontainers.image.version="$PROJECT_VERSION"                              \
       org.opencontainers.image.authors="Saleor Commerce (https://saleor.io)"           \
-      org.opencontainers.image.licenses="BSD 3"
+      org.opencontainers.image.licenses="BSD 3"                                        \
+      org.opencontainers.image.extrainfo="test"
