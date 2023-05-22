@@ -13,13 +13,13 @@ pipeline{
 		
 		stage('docker image build'){
 			steps{
-			    sh 'docker image build -t sashidhar/saleor-dashboard1:Dev-21052322 .'		
+			    sh 'docker image build -t sashidhar33/saleor-dashboard1:Dev-22052332 .'		
 			}
 		}
 
         stage('docker image push to registry'){
             steps{
-                sh 'docker image push sashidhar/saleor-dashboard1:Dev-21052322'
+                sh 'docker image push sashidhar33/saleor-dashboard1:Dev-22052332'
             }
         }
 	}
